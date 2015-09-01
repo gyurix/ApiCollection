@@ -1,0 +1,168 @@
+#ChatAPI configuration ► by: Gyurix
+#
+#You can use hover and chat events in chat-formats, their syntax are:
+#
+#Splitting several chat parts with \r\r:
+#<ChatPart>[\r\r<ChatPart>[\r\r<ChatPart>]], i.e. §e§l1. tpart,\r\r§b§l2. part\r\r§6§l 3. part\r\r§c§l4. part
+#
+#ChatPart format, splitting with \r: <Text>[\r[\<ClickEventType>\]<ClickEventValue>[\r[\<ClickEventType>\]<ClickEventValue>[\r<Insertion>]]]
+#HoverEventTypes: s(suggest command), e(run command), p(change page), u(open url), f(open file)
+#ClickEventTypes: t(show text), i(show item), e(show entity), a(show achievement)
+#
+#
+#If you don't use the optional type argument, the 1. type will be used
+#
+variables:
+  player: <groupprefixes>
+    1: <playerprefix><playername><playersuffix>
+      hover: Left click§e§l to open player bar!
+Shift click§e§l to copy playername to the chat!\r
+        color: §6§l
+      click: \e\/openbar <playername>\r<playername>
+      insertion: <playername>
+    2: <groupsuffixes>
+  time: <time>
+    color: §f§l
+    hover: <date>
+      color: §b§l
+custommsgs: +
+  openbar: §c§lThe bar is not yet done, CloudeLecaw, please do it!
+  rules: §4§lRules §o(hover to read)
+    hover: 1. §e§l§oNo Griefing
+2. §e§l§oNo Spamming
+3. §e§l§oNo Advertising
+4. §e§l§oNo Cursing/No Constant Cursing
+5. §e§l§oNo Trolling/Flaming
+6. §e§l§oNo Asking for OP, Ranks, or Items
+7. §e§l§oRespect all Players
+8. §e§l§oObey Staff There the Law
+9. §e§l§oNo Racist or Sexist Remarks.
+10. §e§l§oNo Mods/Hacks
+11. §e§l§oNo Full Caps Messages
+12. §e§l§oNo Builds Near Spawn
+      color: §c§l
+#If you want to continue your message, you can do it with this plugin.
+longerchat: +
+  player: 200
+  admin: 500
+replacements: +
+  default:
+    onlywholeword: -
+    casesensitive: +
+  1:
+    input: idk
+      onlywholeword: +
+      casesensitive: -
+    output: I don't know
+      color: §c
+  2:
+    input: u
+      onlywholeword: +
+      casesensitive: -
+    output: you
+  3:
+    input: :-)
+      onlywholeword: +
+      casesensitive: -
+    output: ☺
+      color: §e§l
+      hover: This is a nice replaced smiley.
+censor: +
+  regex: .*<word>.*
+    perchar: <char>+
+  blacklist: fuck ass crap
+  whitelist: grass
+colorize: +
+  character: &
+    messagereplace: +
+    cmdreplace: +
+    signreplace: +
+  customcolors:
+    ?: 0123456789abcdef
+    u: abcde
+severalcharacters:
+  limit: 2
+  punishments:
+    1: Msg chatapi.severalcharacters
+MsgAdmin chatapi.severalcharacters.admin
+Log chatapi.severalcharacters.log
+SetExpire 600000
+    2-4: Msg chatapi.severalcharacters.again
+MsgAdmin chatapi.severalcharacters.admin.again
+Log chatapi.severalcharacters.log.again
+SetExpire 3600000
+    5,9: KICK chatapi.severalcharacters.msgkick
+MsgAdmin chatapi.severalcharacters.admin.kick
+Log chatapi.severalcharacters.log.kick
+SetExpire 86400000
+    6-8,10,11: Msg chatapi.severalcharacters.again
+MsgAdmin chatapi.severalcharacters.admin.again
+Log chatapi.severalcharacters.log.again
+SetExpire 86400000
+    12-20: TempBan chatapi.severalcharacters.msgtempban 3600000
+MsgAdmin chatapi.severalcharacters.admin.tempban
+Log chatapi.severalcharacters.log.tempban
+SetExpire 86400000
+    21+: Ban chatapi.severalcharacters.msgban
+MsgAdmin chatapi.severalcharacters.admin.ban
+Log chatapi.severalcharacters.log.ban
+SetExpired
+  1: 3
+    chars: !?.
+  warnings: 
+capsprotect:
+  player:
+    noratiocheck: 3
+    maxratio: 20
+  admin:
+    noratiocheck: 3
+    maxratio: 20
+spamprotect: +
+  player:
+    limit: 7000
+      msgs: 2
+    same-msg: 5
+      expire: 90000
+    containing-msg: 5
+      expire: 90000
+  admin:
+    limit: 7000
+      msgs: 3
+channels:
+  local:
+#Prefix for switching to this chat:
+    fastswitch: L: 
+#Here you can set the channels chat radius, -1 means infinite
+    radius:
+      admin: -1
+      player: 50
+#Java time format: http://docs.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html
+    timeformats:
+      time: HH:mm:ss
+      date: yyyy:MM:dd ► E
+#You need to define the interpretation order here (it must start with highest "rank" and end with lowest rank)
+    chatformats: admin player
+      player: <channel> §f§l<time> §e► §b<groupnames>§e ► §f<player>§e ► §f<message>
+      admin: <channel> §f§l<time> §6► §4<groupnames>§6 ► §c§l<player>§6 ► §f<message>
+  global:
+#Prefix for switching to this chat:
+    variables:
+      channel:
+        color: §b§l
+        insertion: global
+        1: G
+          hover: §6§lLeft click§e§l to switch to global channel!
+          click: \e\/channel global
+        2: :
+          hover: §6§lLeft click§e§l to write to global channel!
+          click: <fastswitch>
+    fastswitch: !
+    radius:
+      player: -1
+#Java time format: http://docs.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html
+    timeformats:
+      time: HH:mm:ss
+      date: yyyy:MM:dd ► E
+    chatformats: admin player
+      player: <channel> §f§l<time> §e► §b<groupnames>§e ► §f<player>§e ► §f<message>
+      admin: <channel> §f§l<time> §6► §4<groupnames>§6 ► §c§l<player>§6 ► §f<message>

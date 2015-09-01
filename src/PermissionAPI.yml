@@ -1,0 +1,8 @@
+enabled: +
+debug: -
+groups:
+  default: Player
+  op: OP
+#If the requested permission isn't found for a player, then this value is returned.
+nosuchperm: -
+  op: +

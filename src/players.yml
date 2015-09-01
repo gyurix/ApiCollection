@@ -1,0 +1,10 @@
+CONSOLE:
+  data:
+    lang: en
+gyurix:
+  groups: Admin
+  permissions: clans.use
+clans.command.new
+clans.command.*
+  data:
+    lang: hu

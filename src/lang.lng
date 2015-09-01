@@ -1,0 +1,152 @@
+en
+kf.langchange.commands:lang language
+kf.langchange.helpline:Command for changing plugins language.
+kf.langchange.list.prefix:§e§lAvailable languages: §b
+kf.langchange.list.separator:§c§l, §b
+kf.langchange.noperm:§c§lYou don't have permission to change your language
+kf.langchange.noperm.player:§c§lYou don't have permission to change another players language!
+kf.langchange.noperm.console:§c§lYou don't have permission to change console language!
+kf.langchange.notfound:§c§lThis language (§e§l<0>§c§l) isn't available on this server!
+kf.langchange.playernotfound:§c§lThe given player (§e§l<0>§c§l) wasn't found!
+kf.langchange.success:§a§lYour language was succesfully changed to §e§l<0>§a§l!
+kf.langchange.success.player:§e§l<player>§a§l players language was succesfully changed to §e§l<lang>§a§l!
+kf.langchange.success.console:§a§lConsole language was succesfully changed to §e§l<0>§a§l!
+#PermApi
+permapi.command.permapi:permapi pa
+permapi.command.data:data dat d
+permapi.command.group:group gr g
+permapi.command.hasperm:hasperm hasp hp
+permapi.command.perm:perm p
+permapi.group.notfound:§cThe given group (§e§l<group>§c) wasn't found.
+permapi.group.perm.list:§e§l<group>§a§l groups permissions:\n§f<perms>
+permapi.group.perm.notdefined:§6The given permission (§e§l<perm>§6) is not defined for group §e§l<group>§6!
+permapi.group.perm.true:§e§l<group>§a§l contains the requested permission (§e§l<perm>§a§l)!
+permapi.group.perm.false:§e§l<group>§4§l don't contains the requested permission (§e§l<perm>§4§l)!
+permapi.group.perm.added:§e§l<perm>§a§l permission was added to group §e§l<group>§a§l!
+permapi.group.perm.removed:§e§l<perm>§4§l permission was removed from group §e§l<group>§4§l!
+permapi.group.subgroup.list:§e§l<group>§a§l groups subgroups:\n§f<groups>
+permapi.group.subgroup.added:§e§l<group>§a§l group was added to §e§l<subgroup>§a§l groups subgroups!
+permapi.group.subgroup.set:§e§l<group>§a§l groups subgroup was set to group §e§l<subgroup>§a§l!
+permapi.group.subgroup.removed:§e§l<group>§4§l group was removed from §e§l<subgroup>§4§l groups subgroups!
+permapi.group.created:§a§lGroup §e§l<group>§a§l was created succesfully!
+permapi.group.removed:§4§lGroup §e§l<group>§4§l was removed succesfully!
+permapi.group.list:§e§lAvailable groups: §f<groups>
+permapi.group.data.all:§e§l<group> §6groups all data:\n<data>
+permapi.group.data.starting:§e§l<group> §6groups datas §e§l<adress>§6 adresses subdata:\n<data>
+permapi.group.data.notfound:§e§l<group> §cgroups data isn't contains the given adress (§e§l<adress>§c).
+permapi.group.data.set:§e§l<group> §a§lgroups datas §e§l<adress>§a§l adress was succesfully set to value: §f<data>
+permapi.group.data.set.empty:§e§l<group> §a§lgroups datas §e§l<adress>§a§l adress was succesfully set to empty value.
+permapi.group.data.remove:§4§lThe given adress (§e§l<adress>§4§l) and all its subadresses were succesfully removed from group §e§l<group>§4§ls data.
+permapi.group.dataformat:§e§l<adress> --> §f<value>
+permapi.group.dataformat.empty:§e§l<adress> --> §7(empty)
+permapi.player.notfound:§cThe given player (§e§l<player>§c) wasn't found.
+permapi.player.perm.list:§e§l<player>§a§l players permissions:\n§f<perms>
+permapi.player.perm.true:§e§l<player>§a§l has got the requested permission (§e§l<perm>§a§l)!
+permapi.player.perm.false:§e§l<player>§4§l hasn't got the requested permission (§e§l<perm>§4§l)!
+permapi.player.perm.added:§e§l<perm>§a§l permission was added to §e§l<player>§a§l players permissions!
+permapi.player.perm.removed:§e§l<perm>§4§l permission was removed from §e§l<player>§4§l players permissions!
+permapi.player.group.list:§e§l<player>§a§l player is in these groups:\n§f<groups>
+permapi.player.group.added:§e§l<player>§a§l player was added to §e§l<group>§a§l group!
+permapi.player.group.set:§e§l<player>§a§l players group was set to §e§l<group>§a§l group!
+permapi.player.group.removed:§e§l<player>§4§l player was removed from §e§l<group>§4§l group!
+permapi.player.created:§a§lPlayer §e§l<player>§a§l was created succesfully!
+permapi.player.removed:§4§lPlayer §e§l<player>§4§l was removed succesfully!
+permapi.player.list:§e§lRegistered players: §f<players>
+permapi.player.data.all:§e§l<player> §6players all data:\n<data>
+permapi.player.data.starting:§e§l<player> §6players datas §e§l<adress>§6 adresses subdata:\n<data>
+permapi.player.data.notfound:§e§l<player> §cplayers data isn't contains the given adress (§e§l<adress>§c).
+permapi.player.data.set:§e§l<player> §a§lplayers datas §e§l<adress>§a§l adress was succesfully set to value: §f<data>
+permapi.player.data.set.empty:§e§l<player> §a§lplayers datas §e§l<adress>§a§l adress was succesfully set to empty value.
+permapi.player.data.remove:§4§lThe given adress (§e§l<adress>§4§l) and all its subadresses were succesfully removed from player §e§l<player>§4§ls data.
+permapi.player.dataformat:§e§l<adress> --> §f<value>
+permapi.player.dataformat.empty:§e§l<adress> --> §7(empty)
+permapi.saved:§a§lDatabase saved succesfully.
+permapi.debug.on:§a§lDebug messages turned on.
+permapi.debug.off:§4§lDebug messages turned off.
+permapi.toggled.on:§a§lPermission management turned on.
+permapi.toggled.off:§4§lPermission management turned off.
+permapi.reload:§a§lDatabase reloaded succesfully.
+#If you translated this plugin, here you can set your name for the info command. Please send me your translation.
+permapi.translator:Gyurix
+de
+kf.langchange.commands:lang language
+kf.langchange.helpline:Befehl die Sprache der Plugins zu aendern.
+kf.langchange.list.prefix:§e§lVerfuegbare Sprachen: §b
+kf.langchange.list.separator:§c§l, §b
+kf.langchange.noperm:§c§lDu hast nicht die Berechtigung die Konfigurationsdatei zu benutzen.
+kf.langchange.noperm.player:§c§lDu hast nicht die Erlaubis die Sprache eines anderen Spielers zu aendern.
+kf.langchange.noperm.console:§c§lDu hast nicht die Erlaubnis die Sprache der Konsole zu aendern.
+kf.langchange.playernotfound:§c§lDer genannte Spieler §e§l<0>§c§l wurde nicht gefunden.
+kf.langchange.notfound:§c§lDiese Sprache §e§l<0>§c§l §c§list auf dem Server nicht verfuegbar.
+kf.langchange.success:§a§lSprache erfolgreich zu §e§l<0>§a§l §fgewechselt.
+kf.langchange.success.player:Die Sprache des Spielers §e§l<player>§a§l wurde erfolgreucg zu  §e§l<lang>§a§l geaendert.
+kf.langchange.success.console:§a§lDie Sprache der Konsole wurde zu §e§l<0>§a§l gewechselt.
+#PermApi
+permapi.command.permapi:permapi pa
+permapi.command.data:data dat d
+permapi.command.group:group gr g
+permapi.command.hasperm:hasperm hasp hp
+permapi.command.perm:perm p
+permapi.group.notfound:§cDie angegebene Gruppe §e§l<group>§c wurde nicht gefunden.
+permapi.group.perm.list:§e§l<group>§a§l Gruppenberechtigungen:\n§f<perms>
+permapi.group.perm.notdefined:§6Die angegebene Berechtigung §e§l<perm>§6 ist nicht in der Gruppe §e§l<group>§6 definiert!
+permapi.group.perm.true:§e§l<group>§a§l benoetigt folgende Berechtigungen: §e§l<perm>§a§l!
+permapi.group.perm.false:§e§l<group>§4§l beinhaltet nicht die benoetigte Berechtigung §e§l<perm>§4§l!
+permapi.group.perm.added:§a§lDie Berechtigung §e§l<perm>§a§l wurde der Gruppe §e§l<group>§a§l hinzugefuegt!
+permapi.group.perm.removed:§4§lDie Berechtigung §e§l<perm>§4§l wurde von der Gruppe §e§l<group>§4§l entfernt!
+permapi.group.subgroup.list:§e§l<group>§a§l Untergruppen:\n§f<groups>
+permapi.group.subgroup.added:§a§lDie Untergruppe §e§l<group>§a§l wurde der Gruppe §e§l<group>§a§l hinzugefuegt!
+permapi.group.subgroup.set:§a§lDie Untergruppe der Gruppe §e§l<group> §a§lwurde als Untergruppe der Gruppe §e§l<subgroup>§a§lfestgelegt!
+permapi.group.subgroup.removed:§4§l§Die Untergrppe e§l<group>§4§l wurde von der Gruppe §e§l<group>§4§l entfernt!
+permapi.group.created:§a§lDie Gruppe §e§l<group>§a§l wurde erstellt!
+permapi.group.removed:§4§lDie Gruppe §e§l<group>§4§l wurde entfernt!
+permapi.group.list:§e§lexistierende Gruppen: §f<groups>
+permapi.group.data.all:§6Die Gruppe §e§l<group> hat foldende Daten:\n<data>
+permapi.group.data.starting:§6Die Gruppe §e§l<group> §6mit der Datenbankadresse §e§l<adress>§6 halt foldene Daten:\n<data>
+permapi.group.data.notfound:§cDie Daten Gruppedatei der Gruppe §e§l<group> §cbeinhaltet nicht folgende Datenbankaddresse: §e§l<adress>§c.
+permapi.group.data.set:§a§lDie Datenbankadresse §e§l<adress>§a§l der Gruppe §e§l<group> §a§lwurde auf den Wert: §f<data> §a§lgesetzt.
+permapi.group.data.set.empty:§a§lDie Datenbankadresse §e§l<adress>§a§l der Gruppe §e§l<group> wurde erfolgreicht auf den Wert §e§lleer §a§lgesetzt.
+permapi.group.data.remove:§4§lDie angegebene Datenbankadresse §e§l<adress>§4§l und alle ihre Unteradressen wurden aus der Datenbank der Gruppe §e§l<group> §4§lentfernt.
+permapi.group.dataformat:§e§l<adress> --> §f<value>
+permapi.group.dataformat.empty:§e§l<adress> --> §7keine Informationen
+permapi.player.notfound:§cDer Spieler §e§l<player>§c wurde nicht gefunden.
+permapi.player.perm.list:§a§lDer Spieler §e§l<player>§a§l hat die Berechtigung:\n§f<perms>
+permapi.player.perm.true:§a§lDer Spieler §e§l<player>§a§l hat die Berechtigung §e§l<perm>§a§!
+permapi.player.perm.false:§4§lDer Spieler §e§l<player>§4§l hat nicht die benoetigte Berehchtigung: §e§l<perm>§4§l!
+permapi.player.perm.added:§a§lDem Spieler §e§l<player>§a§l wurde die Berechtigung §e§l<perm>§a§l hinzugefuegt!
+permapi.player.perm.removed:§4§lDem Spieler §e§l<player>§4§l wurde die Berechtigung §e§l<perm>§4§l entzogen!
+permapi.player.group.list:§a§lDer Spieler §e§l<player>§a§l ist in folgenden Gruppen:\n§f<groups>
+permapi.player.group.added:§a§lDer Spieler §e§l<player>§a§l wurde der Gruppe §e§l<group>§a§l hinzugefuegt!
+permapi.player.group.set:§a§lDie Gruppen des Spielers §e§l<player>§a§l wurden als Gruppe §e§l<group>§a§l festgelegt!
+permapi.player.group.removed:§4§lDer Spieler §e§l<player>§4§l wurde aus der Gruppe §e§l<group>§4§l entfernt!
+permapi.player.created:§a§lDer Spieler §e§l<player>§a§l wurde erstellt!
+permapi.player.removed:§4§lDer Spieler §e§l<player>§4§l wurde entfernt!
+permapi.player.list:§e§lregistierte Spieler: §f<players>
+permapi.player.data.all:§e§l<player> §6Spielerdaten:\n<data>
+permapi.player.data.starting:§e§l<player>'s§6 Spielerdatenbankadresse ist §e§l<adress> §6und hat folgende Unterdatenbankadresse:\n<data>
+permapi.player.data.notfound:§e§l<player>'s §cSpielerdaten beinhalten nicht die folgende Adresse: §e§l<adress>§c.
+permapi.player.data.set:§e§l<player>'s §a§lSpielerdaten §e§l<adress>§a§l wurde auf den Wert§f <data> §6gestzt.
+permapi.player.data.set.empty:§e§l<player>'s' §a§lSpielerdaten §e§l<adress>§a§l wurde auf den Wert: §a§lleer §a§lgesetzt.
+permapi.player.data.remove:§4§lDie angegebene Adresse §e§l<adress>§4§l und alle ihre Unteradressen wurden aus der Spielerdatenbank von §e§l<player>§4§ls §4§lenfternt.
+permapi.player.dataformat:§e§l<adress> --> §f<value>
+permapi.player.dataformat.empty:§e§l<adress> --> §7(leer)
+permapi.saved:§a§lDatenbank erfolgreich gespeichert.
+permapi.debug.on:§a§lDebugmeldungen wurden aktiviert.
+permapi.debug.off:§4§lDebugmeldunge wurden deaktiviert.
+permapi.toggled.on:§a§lBerechitungsverwaltung PermissionAPI wurde aktiviert.
+permapi.toggled.off:§4§lBerechitungsverwaltung PermissionAPI wurde deaktiviert.
+permapi.reload:§a§lDatabank wurde neugeladen.
+#Wenn du diesesn plugin uebersetzt hast, kannst du hier deinen Namen fuer das Infokomtenar hinterlassen. Bitte sendet mir die Uebersetzung.
+permapi.translator:CloudeLecaw
+hu
+kf.langchange.list.prefix:§e§lElérhető nyelvek: §b
+kf.langchange.list.separator:§c§l, §b
+kf.langchange.noperm:§c§lNincs jogod használni a Konfigfájlt!
+kf.langchange.notfound:§c§lA megadott nyelv (§e§l<0>§c§l) nem érhető el ezen a szerveren!
+kf.langchange.success:§a§lSikeresen módosítottad a nyelved az alábbira: §e§l<0>§a§l!
+ru
+kf.langchange.list.prefix:§e§lAvailable languages: §b
+kf.langchange.list.separator:§c§l, §b
+kf.langchange.noperm:§c§lУ вас нет прав на использование ConfigurationFile!
+kf.langchange.notfound:§c§lЭтот язык (§e§l<0>§c§l) не найден на сервере!
+kf.langchange.success:§a§lВаш язык был изменен на §e§l<0>§a§l!

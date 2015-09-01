@@ -1,0 +1,54 @@
+Player:
+  permissions: protectioncore.use
+protectioncore.select
+protectioncore.command.area
+protectioncore.command.define
+protectioncore.command.remove
+protectioncore.command.info
+protectioncore.command.player
+protectioncore.command.group
+protectioncore.command.flag
+protectioncore.command.removeflag
+protectioncore.regiontype.player
+protectioncore.limit.3
+rainbow.bal
+rainbow.bp
+rainbow.buy
+rainbow.colors
+rainbow.divorce
+rainbow.ec
+rainbow.home
+rainbow.ignore
+rainbow.jemote
+rainbow.jemote.*
+rainbow.jot
+rainbow.marry
+rainbow.me
+rainbow.name
+rainbow.namecolor
+rainbow.pay
+rainbow.plugins
+rainbow.ride
+rainbow.sell
+rainbow.sethome
+rainbow.spawn
+rainbow.suicide
+rainbow.tell
+rainbow.throw
+rainbow.tpaccept
+rainbow.tpahere
+rainbow.trigger
+rainbow.warp
+rainbow.wild
+rainbow.worth
+rainbow.chatcolor
+rainbow.signcolor
+Admin:
+  subgroups: Player
+  permissions: protectioncore.command.*
+protectioncore.disableflagcheck.*
+permapi.command.haspermission
+-rainbow.sell
+rainbow.*
+OP:
+  permissions: *

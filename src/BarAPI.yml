@@ -1,0 +1,19 @@
+#BarAPI configuration   plugin created by Gyurix
+#Amount of ticks, when the bars will be teleported, to the players, smaller ideas can cause lagg, bigger numbers can cause incorrect appearing of bars
+update-intervall: 5
+#Here is the magic, where you can set all the only client side withers id and positions, relative to player.
+#If you found better combination, then the original, please write it to the forum.
+fake-withers: 7001 0 25 0
+7002 0 -12 -25
+7003 0 -12 25
+7004 0 0 -25
+7005 0 0 25 
+7006 0 12 -25
+7007 0 12 25 
+7008 -25 -12 0
+7009 25 -12 0
+7010 -25 0 0
+7011 25 0 0
+7012 -25 12 0
+7013 25 12 0
+7014 0 -25 0

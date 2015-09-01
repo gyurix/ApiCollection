@@ -1,0 +1,4 @@
+enable: +
+removetime: 100
+firstremovetime: 200
+jointime: 300
